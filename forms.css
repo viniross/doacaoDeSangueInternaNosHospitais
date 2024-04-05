@@ -110,6 +110,16 @@ button{
     margin-top: 0.9rem;
 }
 
+.IDD span::before {
+    content: "*";
+    position: absolute;
+    color: red; /* Cor desejada */
+}
 
+.perguntas span::before {
+    content: "*";
+    position: absolute;
+    color: red; /* Cor desejada */
+}
 
 
