@@ -63,17 +63,19 @@ footer{ /* ARRUMAR ISSO */
 
 
 #enviar {
-    background-color: #4CAF50; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    padding: 12px 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    border: none; /* Remover borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor ao passar */
-    transition: background-color 0.3s; /* Transição suave de cor */
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Estilizar o botão ao passar o mouse */
 #enviar:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    background-color: #b4b4b4;
 }
