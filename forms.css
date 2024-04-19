@@ -35,6 +35,19 @@ body {
     font-size: 2.5rem;
 
 }
+.texto span::before {
+    content: "*";
+    position: absolute;
+    color: red; /* Cor desejada */
+}
+#Nome {
+    width: 60rem;
+    margin: auto; /* isso centraliza o elemento horizontalmente */
+    margin-top: 1.5rem;
+    padding: 1rem; /* aplica o padding uniformemente */
+    background-color: #ffffff;
+    border-radius: 1rem;
+}
 .perguntas {
     width: 60rem;
     margin: auto; /* isso centraliza o elemento horizontalmente */
@@ -42,9 +55,25 @@ body {
     padding: 1rem; /* aplica o padding uniformemente */
     background-color: #ffffff;
     border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+}
+
+footer{ /* ARRUMAR ISSO */
+    margin-bottom: 2rem;
+}
+
+
+#enviar {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 12px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar */
+    transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+/* Estilizar o botão ao passar o mouse */
+#enviar:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
 }
