@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
     <style>
         @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap);
     </style>
@@ -23,5 +25,42 @@
                 <a id="a2" href="forms.html" style="color: white;">Quero Doar</a>
             </div>
         </header>
+
+        <div class="div-slider">
+            <ul class="slides-front">
+              <input type="radio" name="radio-btn" id="img-1" checked="">
+              <li class="slide-container">
+                 <div class="slide">
+                   <img src="https://www.cleverfiles.com/howto/wp-content/uploads/2016/08/mini.jpg">
+                 </div>
+                 <div class="nav">
+                   <label for="img-3" class="prev">‹</label>
+                   <label for="img-2" class="next">›</label>
+                 </div>
+              </li>
+          
+              <input type="radio" name="radio-btn" id="img-2">
+              <li class="slide-container">
+                  <div class="slide">
+                    <img src="https://s2-techtudo.glbimg.com/SSAPhiaAy_zLTOu3Tr3ZKu2H5vg=/0x0:1024x609/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/c/u/15eppqSmeTdHkoAKM0Uw/dall-e-2.jpg">
+                  </div>
+              <div class="nav">
+                <label for="img-1" class="prev">‹</label>
+                <label for="img-3" class="next">›</label>
+              </div>
+              </li>
+          
+              <input type="radio" name="radio-btn" id="img-3">
+              <li class="slide-container">
+                  <div class="slide">
+                    <img src="https://files.tecnoblog.net/wp-content/uploads/2022/09/stable-diffusion-imagem.jpg">
+                  </div>
+              <div class="nav">
+                <label for="img-2" class="prev">‹</label>
+                <label for="img-1" class="next">›</label>
+              </div>
+              </li>
+            </ul>
+          </div>
     </body>
 </html>
