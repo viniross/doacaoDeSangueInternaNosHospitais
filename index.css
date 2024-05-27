@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: color-mix(in srgb, red 60%, black 40%);
+    background-color: color-mix(in srgb, red 50%, black 50%);
 }
 
 header {
