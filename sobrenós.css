@@ -1,0 +1,47 @@
+*{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: color-mix(in srgb, red 60%, black 40%);
+}
+
+header {
+    height: 3rem;
+    width: 100%;
+    background-color: #424242;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 350px;
+    height: 250px;
+    margin-top: 2rem;
+    margin-bottom: 2.3rem;
+}
+
+#a1{
+    margin-right: 215px;
+    font-size: 27px;
+    text-decoration: none;
+}
+
+#a2{
+    margin-left: 215px;
+    font-size: 27px;
+    text-decoration: none;
+}
