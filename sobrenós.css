@@ -1,14 +1,13 @@
-*{
+* {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-    
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: color-mix(in srgb, red 60%, black 40%);
 }
 
@@ -34,14 +33,26 @@ header {
     margin-bottom: 2.3rem;
 }
 
-#a1{
+#a1 {
     margin-right: 215px;
     font-size: 27px;
     text-decoration: none;
 }
 
-#a2{
+#a2 {
     margin-left: 215px;
     font-size: 27px;
     text-decoration: none;
+}
+
+.wrapper-content {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+
+.wrapper-content img {
+    width: 150px;
+    margin: 20px;
 }
