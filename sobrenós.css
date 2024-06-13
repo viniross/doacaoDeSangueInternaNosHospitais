@@ -1,4 +1,4 @@
-* {
+*{
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
@@ -7,12 +7,12 @@
     padding: 0;
 }
 
-body {
-    background-color: color-mix(in srgb, red 60%, black 40%);
+body{
+    background-color: color-mix(in srgb, red 50%, black 50%);
 }
 
 header {
-    height: 3rem;
+    height: 4rem;
     width: 100%;
     background-color: #424242;
     color: white;
@@ -26,21 +26,14 @@ header {
     align-items: center;
 }
 
-#logo {
-    width: 350px;
-    height: 250px;
-    margin-top: 2rem;
-    margin-bottom: 2.3rem;
-}
-
 #a1 {
-    margin-right: 215px;
+    margin-right: 300px;
     font-size: 27px;
     text-decoration: none;
 }
 
 #a2 {
-    margin-left: 215px;
+    margin-left: 300px;
     font-size: 27px;
     text-decoration: none;
 }
