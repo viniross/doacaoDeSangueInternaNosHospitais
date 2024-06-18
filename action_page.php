@@ -1,5 +1,7 @@
 <?php
 
+require_once 'config.php';
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -12,17 +14,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $reason = $_POST['reason'];
     $data_atual = date('d/m/Y');
     $hora_atual = date('H:i:s');
-
-    $server = 'localhost';
-    $usuario = 'root';
-    $senha = '';
-    $bd = 'ibdhosp';
-
-    $conn = new mysqli($server , $usuario, $senha, $bd);
-
-    if ($conn->connect_error) {
-        die("Falha ao se comunicar com o banco de dados: ".$conn->connect_error);   
-    }
 
     $smtp = $conn->prepare("INSERT INTO dados (nome, idade, hospital, doou, motivo, data, hora) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $smtp->bind_param("sssssss", $fname, $age, $hospital, $donated, $reason, $data_atual, $hora_atual);
