@@ -63,10 +63,38 @@ header {
     color: white;
 }
 
+.textcunhavini{
+    margin-top: -160px;
+}
 
-.wrapper-content img {
+.textlauro{
+    margin-top: -210px;
+}
+
+.instalauro{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 155px;
+    margin-left: -90px;
+}
+.instacunha{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 100px;
+    margin-left: -107.5px;
+}
+
+.instavini{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 105px;
+    margin-left: -92px;
+}
+
+.img1{
     width: 150px;
     margin: 20px;
+    border-radius: 15px;
 }
 
 footer {
