@@ -2,7 +2,7 @@
 
 require_once 'config.php';
 
-$secretPassword = "123";
+$secretPassword = "L0805V1104C1409";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $passwordTyped = $_POST['senha'];
 

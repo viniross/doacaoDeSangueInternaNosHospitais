@@ -25,9 +25,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $smtp->close();
-    $conn->close();
 
 } else {
     echo "Formulário não foi enviado corretamente.";
 }
-?>
