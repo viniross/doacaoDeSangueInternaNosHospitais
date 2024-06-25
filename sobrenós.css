@@ -12,11 +12,9 @@ body{
 }
 
 header {
-    
     height: 4rem;
     width: 100%;
     background-color: white
-    
 }
 
 .container {
@@ -63,38 +61,80 @@ header {
     color: white;
 }
 
-.textcunhavini{
+
+.icons{
     margin-top: -160px;
+
+
+}
+.icons_cunha{
+    margin-top: -160px;
+        
 }
 
-.textlauro{
-    margin-top: -210px;
-}
 
-.instalauro{
-    width: 20px;
-    height: 20px;
-    margin-bottom: 150px;
+#infos {
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 100px;
     margin-left: -90px;
 }
-.instacunha{
-    width: 20px;
-    height: 20px;
+#infos_cunha { ARRUMAR
+    display: flex; 
+    justify-content: center; 
     margin-bottom: 100px;
-    margin-left: -107.5px;
+    margin-left: -90px;
 }
 
-.instavini{
-    width: 20px;
-    height: 20px;
-    margin-bottom: 100px;
-    margin-left: -92px;
+
+#infos a {
+    margin: 0 5px; 
 }
 
-.linkedin{
+#instalauro{
+    width: 20px;
+    height: 20px;
+}
+#instacunha{
+    width: 20px;
+    height: 20px;
+}
+
+#instavini{
+    width: 20px;
+    height: 20px;
+}
+
+#linkedin_lauro{
+    width: 20px;
+    height: 20px;
+}
+
+#linkedin_cunha{
     width: 20px;
     height: 20px;
     
+}
+
+#linkedin_vini{
+    width: 20px;
+    height: 20px;
+    
+}
+
+#github_lauro{
+    width: 20px;
+    height: 20px;
+}
+
+#github_cunha{
+    width: 20px;
+    height: 20px;
+}
+
+#github_vini{
+    width: 20px;
+    height: 20px;
 }
 
 .fotos_perfil{
@@ -111,6 +151,6 @@ footer {
     margin-top: 2rem;
     text-align: center;
     background-color: #F0F0F0;
-    padding: 20px;
+    padding: 2.4%;
     box-shadow: 0px -3px 15px rgba(0, 0, 0, 0.49);
 }
