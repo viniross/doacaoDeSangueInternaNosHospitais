@@ -18,7 +18,7 @@
                 <h1 id="H12"></h1>
                 <div class="box">
                     <span> 
-                        <a href="index.html"><img src="IMAGENS/img.png" alt="logo" width="350px" height="45px"></a>
+                        <a href="index.php"><img src="IMAGENS/img.png" alt="logo" width="350px" height="45px"></a>
                     </span>
                 </div>
                 <a id="a2" href="forms.html" style="color: white;">Quero Doar</a>
@@ -76,13 +76,13 @@
         $conn->close();
         ?>
         
-        <canvas id="ageChart" width="600" height="400"></canvas>
-        <canvas id="hospitalChart" width="600" height="400"></canvas>
-        <canvas id="donationChart" width="600" height="400"></canvas>
+        <canvas id="ageChart" width="25" height="12.5"></canvas>
+        <canvas id="hospitalChart" width="25" height="12.5"></canvas>
+        <canvas id="donationChart" width="25" height="12.5"></canvas>
         
         <script>
-            var dataIdade = <?php echo json_encode($data_idade); ?>;
-            var ctxAge = document.getElementById("ageChart").getContext("2d");
+            let dataIdade = <?php echo json_encode($data_idade); ?>;
+            let ctxAge = document.getElementById("ageChart").getContext("2d");
             new Chart(ctxAge, {
                 type: 'pie',
                 data: {
@@ -95,13 +95,33 @@
                 }
             });
         
-            var dataHospital = <?php echo json_encode($data_hospital); ?>;
-            var ctx = document.getElementById("hospitalChart").getContext("2d");
-            new Chart(ctx).Pie(dataHospital);
+            let dataHospital = <?php echo json_encode($data_hospital); ?>;
+            let ctxHospital = document.getElementById("hospitalChart").getContext("2d");
+            new Chart(ctxHospital, {
+                type: 'pie',
+                data: {
+                    datasets: [{
+                        data: dataHospital.map(item=>item.value),
+                        backgroundColor: dataHospital.map(item => item.color),
+                        hoverBackgroundColor: dataHospital.map(item => item.highlight)
+                    }],
+                    labels: dataHospital.map(item => item.label)
+                }
+            });
         
-            var dataDoacao = <?php echo json_encode($data_doacao); ?>;
-            var ctx = document.getElementById("donationChart").getContext("2d");
-            new Chart(ctx).Pie(dataDoacao);
+            let dataDoacao = <?php echo json_encode($data_doacao); ?>;
+            let ctxDoacao = document.getElementById("donationChart").getContext("2d");
+            new Chart(ctxDoacao, {
+                type: 'pie',
+                data: {
+                    datasets: [{
+                        data: dataDoacao.map(item => item.value),
+                        backgroundColor: dataDoacao.map(item => item.color),
+                        hoverBackgroundColor: dataDoacao.map(item => item.highlight)
+                    }],
+                    labels: dataDoacao.map(item => item.label)
+                }
+            });
         </script>
     </body>
 </html>

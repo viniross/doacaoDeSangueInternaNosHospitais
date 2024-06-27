@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $smtp->bind_param("sssssss", $fname, $age, $hospital, $donated, $reason, $data_atual, $hora_atual);
 
     if ($smtp->execute()) {
-        echo "Formulário enviado com sucesso!";
+        echo "Formulário enviado com sucesso!  <br> <br> Compartilhe o projeto para dois amigos, assim salvaremos mais vidas!" ;
     } else {
         echo "Erro no envio do formulário: ".$smtp->error;
     }
