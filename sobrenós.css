@@ -81,7 +81,7 @@ header {
     display: flex; 
     justify-content: center; 
     margin-bottom: 81px;
-    margin-left: -90px;
+    margin-left: -95px;
 }
 
 .infos a {
@@ -91,7 +91,7 @@ header {
 #infos_cunha { 
     display: flex; 
     justify-content: center; 
-    margin-bottom: 100px;
+    margin-bottom: 93px;
     margin-left: -108px;
 }
 
@@ -149,8 +149,9 @@ header {
     width: 80%;
     height: auto;
     color: #F0F0F0;
-    margin-left: -91px;
+    margin-left: -86px;
     margin-top: 55px;
+    text-align: justify;
     /* margin-bottom: auto; */
 }
 
@@ -168,6 +169,6 @@ footer {
     margin-top: 2rem;
     text-align: center;
     background-color: #F0F0F0;
-    padding: 2.4%;
+    padding: 2%;
     box-shadow: 0px -3px 15px rgba(0, 0, 0, 0.49);
 }
