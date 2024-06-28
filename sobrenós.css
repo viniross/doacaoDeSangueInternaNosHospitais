@@ -57,10 +57,14 @@ header {
 .wrapper-content {
     display: flex;
     align-items: center;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     color: white;
 }
 
+#names{
+    margin-bottom: 145px;
+    padding-bottom: 10px;
+}
 
 .icons{
     margin-top: -160px;
@@ -73,21 +77,25 @@ header {
 }
 
 
-#infos {
+.infos {
     display: flex; 
     justify-content: center; 
-    margin-bottom: 100px;
-    margin-left: -90px;
-}
-#infos_cunha { ARRUMAR
-    display: flex; 
-    justify-content: center; 
-    margin-bottom: 100px;
+    margin-bottom: 81px;
     margin-left: -90px;
 }
 
+.infos a {
+    margin: 0 5px; 
+}
 
-#infos a {
+#infos_cunha { 
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 100px;
+    margin-left: -108px;
+}
+
+#infos_cunha a {
     margin: 0 5px; 
 }
 
@@ -135,6 +143,15 @@ header {
 #github_vini{
     width: 20px;
     height: 20px;
+}
+
+#text_vini{
+    width: 80%;
+    height: auto;
+    color: #F0F0F0;
+    margin-left: -91px;
+    margin-top: 55px;
+    /* margin-bottom: auto; */
 }
 
 .fotos_perfil{
