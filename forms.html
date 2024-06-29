@@ -2,27 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="forms.css">
-    <link rel="stylesheet" href="forms.css"> 
-    <style>@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap);</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap);
+    </style>
     <title>IBDHosp</title>
 </head>
 <header>
     <div class="container">
-        <div class="box">
-            <span> 
-                <a href="index.html"><img src="IMAGENS/img.png" alt="logo" ></a>
-            </span>
+            <a id="a1" href="sobrenós.html">Sobre Nós</a>
+            <h1 id="H12"></h1>
+            <div class="box">
+                <span> 
+                    <a href="index.php"><img src="IMAGENS/logo IBDHosp.png" alt="logo" width="280px" height="140px"></a>
+                </span>
+            </div>
+            <a id="a2" href="forms.html">Quero Doar</a>
         </div>
-    </div>
 </header>
 <body>
     <h2 id="form">Formulário</h2>
-        <div class="perguntas">
-                <form action="/action_page.php">
-                    <label for="fname">Nome:</label><br>
-                    <input type="text" id="fname" name="fname" value=""><br><br>
-                </form>  
+    <form action="action_page.php" method="post">
+        <div id="Nome">
+            <label for="fname">Nome<span>*</span></label><br><br>   
+            <input type="text" id="fname" name="fname" value="" placeholder="Digite seu nome!" required><br>
         </div>
+        <div class="perguntas">
+            <label>Qual sua idade?</label><br><br>
+            <label><input type="radio" name="age" value="16-25" required> 16 - 25 anos</label><br>
+            <label><input type="radio" name="age" value="26-35"> 26 - 35 anos</label><br>
+            <label><input type="radio" name="age" value="35-45"> 36 - 45 anos</label><br>
+            <label><input type="radio" name="age" value="46-55"> 46 - 55 anos</label><br>
+            <label><input type="radio" name="age" value="56-69"> 56 - 69 anos</label><br>
+        </div>
+        <div class="perguntas">
+            <label>Qual hospital você realizou a doação de sangue?</label><br><br>
+            <label><input type="radio" name="hospital" value="Divina Providência" required> Divina Providência</label><br>
+            <label><input type="radio" name="hospital" value="Moinhos de Vento"> Moinhos de Vento</label><br>
+            <label><input type="radio" name="hospital" value="Clínicas"> Clínicas</label><br>
+            <label><input type="radio" name="hospital" value="HPS - Hospital Pronto Socorro"> HPS - Hospital Pronto Socorro</label><br>
+        </div>
+        <div class="perguntas">
+            <label>Você já doou sangue anteriormente?</label><br><br>
+            <label><input type="radio" name="donated" value="Sim" required> Sim</label><br>
+            <label><input type="radio" name="donated" value="Não"> Não</label><br>
+        </div>
+        <div class="perguntas">
+            <label for="reason">Por que você foi doar sangue?<span>*</span></label><br><br>   
+            <input type="text" id="reason" name="reason" value="" placeholder="Digite aqui!" required><br>
+        </div>
+        <br><br>
+        <input id="enviar" type="submit" value="Enviar">
+    </form>
 </body>
+<footer>
+</footer>
 </html>
