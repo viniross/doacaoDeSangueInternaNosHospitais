@@ -116,47 +116,43 @@
     ?>
 
     <script>
+        // Função para criar gráfico de pizza
+        function createPieChart(ctx, data, labels) {
+            return new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    datasets: [{
+                        data: data.map(item => item.value),
+                        backgroundColor: data.map(item => item.color),
+                        hoverBackgroundColor: data.map(item => item.highlight)
+                    }],
+                    labels: labels
+                },
+                options: {
+                    legend: {
+                        display: true,
+                        labels: {
+                            fontColor: 'white'  // Definindo a cor da fonte da legenda
+                        }
+                    }
+                }
+            });
+        }
+
+        // Dados dos gráficos
         let dataIdade = <?php echo json_encode($data_idade); ?>;
-        let ctxAge = document.getElementById("ageChart").getContext("2d");
-        new Chart(ctxAge, {
-            type: 'pie',
-            data: {
-                datasets: [{
-                    data: dataIdade.map(item => item.value),
-                    backgroundColor: dataIdade.map(item => item.color),
-                    hoverBackgroundColor: dataIdade.map(item => item.highlight)
-                }],
-                labels: dataIdade.map(item => item.label)
-            }
-        });
-
         let dataHospital = <?php echo json_encode($data_hospital); ?>;
-        let ctxHospital = document.getElementById("hospitalChart").getContext("2d");
-        new Chart(ctxHospital, {
-            type: 'pie',
-            data: {
-                datasets: [{
-                    data: dataHospital.map(item => item.value),
-                    backgroundColor: dataHospital.map(item => item.color),
-                    hoverBackgroundColor: dataHospital.map(item => item.highlight)
-                }],
-                labels: dataHospital.map(item => item.label)
-            }
-        });
-
         let dataDoacao = <?php echo json_encode($data_doacao); ?>;
+
+        // Criação dos gráficos
+        let ctxAge = document.getElementById("ageChart").getContext("2d");
+        createPieChart(ctxAge, dataIdade, dataIdade.map(item => item.label));
+
+        let ctxHospital = document.getElementById("hospitalChart").getContext("2d");
+        createPieChart(ctxHospital, dataHospital, dataHospital.map(item => item.label));
+
         let ctxDoacao = document.getElementById("donationChart").getContext("2d");
-        new Chart(ctxDoacao, {
-            type: 'pie',
-            data: {
-                datasets: [{
-                    data: dataDoacao.map(item => item.value),
-                    backgroundColor: dataDoacao.map(item => item.color),
-                    hoverBackgroundColor: dataDoacao.map(item => item.highlight)
-                }],
-                labels: dataDoacao.map(item => item.label)
-            }
-        });
+        createPieChart(ctxDoacao, dataDoacao, dataDoacao.map(item => item.label));
     </script>
 
     <footer>
