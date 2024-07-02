@@ -59,7 +59,7 @@ header {
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
-
+    color: #F0F0F0;
 }
 .texto span::before {
     content: "*";
