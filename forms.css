@@ -106,7 +106,6 @@ footer{ /* ARRUMAR ISSO */
     margin: 0 auto;
 }
 
-/* Estilizar o botão ao passar o mouse */
 #enviar:hover {
     background-color: #b4b4b4;
 }

@@ -10,8 +10,8 @@
 #introducao {
     color: white;
     display: flex;
-    margin-right: 150px;
-    margin-left: 145px;
+    margin-right: 9.375rem;
+    margin-left: 9.063rem;
     text-align: center;
     text-align: justify;
 }
@@ -23,7 +23,7 @@ body {
 header {
     height: 4rem;
     width: 100%;
-    background-color: white;
+    background-color: #F0F0F0;
 }
 
 .container {
@@ -40,44 +40,44 @@ header {
 }
 
 #a1 {
-    margin-right: 250px;
-    font-size: 27px;
+    margin-right: 15.625rem;
+    font-size: 1.688rem;
     text-decoration: none;
     color: #000;
     transition: all 0.3s ease;  /* Adiciona uma transição suave para a animação */
 }
 
 #a1:hover {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);  /* Adiciona uma sombra ao texto */
+    text-shadow: 0.125rem 0.125rem 0.313rem rgba(0, 0, 0, 0.2);  /* Adiciona uma sombra ao texto */
 }
 
-#a2 {
-    margin-left: 250px;
-    font-size: 27px;
+#a2 {   
+    margin-left: 15.625rem;
+    font-size: 1.688rem;
     text-decoration: none;
     color: #000;
     transition: all 0.3s ease;  /* Adiciona uma transição suave para a animação */
 }
 
 #a2:hover {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);  /* Adiciona uma sombra ao texto */
+    text-shadow: 0.125rem 0.125rem 0.313rem rgba(0, 0, 0, 0.2);  /* Adiciona uma sombra ao texto */
 }
 
 .div-slider {
-    margin-top: 35px;
+    margin-top: 2.188rem;
     width: auto;
     text-align: center;
 }
 
 .slides-front {
     padding: 0;
-    width: 600px;
-    height: 300px;
+    width: 37.5rem;
+    height: 18.75rem;
     display: block;
     margin: auto;
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 0.938rem;
 }
 
 .slides-front * {
@@ -98,8 +98,8 @@ header {
     left: 0;
     right: 0;
     opacity: 0;
-    width: 980px;
-    height: 370px;
+    width: 61.25rem;
+    height: 23.125rem;
     display: block;
     position: absolute;
     transform: translateX(10%);
@@ -112,7 +112,7 @@ header {
 }
 
 .nav label {
-    width: 80px; 
+    width: 5rem; 
     height: 100%;
     display: none;
     position: absolute;
@@ -121,10 +121,10 @@ header {
     cursor: pointer;
     transition: opacity .2s, transform 0.2s;
     color: #FFF;
-    font-size: 50px; 
+    font-size: 3.125rem; 
     text-align: center;
-    line-height: 300px; 
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    line-height: 18.75rem; 
+    text-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.5); 
     border-radius: 50%; 
 }
 
@@ -157,7 +157,7 @@ footer {
 
 /* AJUSTE DE TAMANHO DOS GRAFICOS ⤵ */
                         .chart-container {
-                            width: 500px;
-                            height: 250px;
+                            width: 31.25rem;
+                            height: 15.625rem;
                             margin: auto;
-                        }
+                        }       
