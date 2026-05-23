@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <style>
         @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap);
     </style>
@@ -17,7 +17,7 @@
             <h1 id="H12"></h1>
             <div class="box">
                 <span> 
-                    <a href="index.php"><img src="IMAGENS/logo IBDHosp.png" alt="logo" width="280px" height="140px"></a>
+                    <a href="index.php"><img src="assets/images/logo-IBDHosp.png" alt="logo" width="280px" height="140px"></a>
                 </span>
             </div>
             <a id="a2" href="forms.html">Quero Doar</a>
@@ -64,7 +64,7 @@
     <p id="introducao">A doação de sangue desempenha um papel crucial no sistema de saúde, sendo essencial para salvar vidas e tratar uma ampla variedade de condições médicas. É o sangue doado que salva vidas em situações de emergência, tratamentos médicos, cirurgias e no tratamento de doenças crônicas. Ao se tornar um doador, você está proporcionando esperança e bem-estar a pacientes que precisam de transfusões sanguíneas para continuar lutando. No entanto, muitos hospitais em todo o mundo enfrentam constantemente desafios em relação ao suprimento adequado de sangue para atender às demandas crescentes. Com isso, será criada uma campanha com base em uma pesquisa para divulgar e destacar a importância da doação de sangue, desmistificar possíveis medos e preconceitos associados ao processo e fornecer informações claras sobre o processo de doação e seus benefícios para a comunidade. Serão organizados eventos de doação de sangue em locais estratégicos, como hospitais, e postos comunitários para facilitar a participação e tornar o processo conveniente e acessível a todos. O principal pilar da pesquisa é a comunicação, sem ela não há nada, e com a doação de sangue não é muito diferente. São poucas pessoas que saem dos seus trabalhos e vão doar sangue, mas a nossa ideia é diferente, é aproveitar e valorizar as pessoas que já estão dentro dos Hospitais, que estão acompanhando alguém ou esperando para fazer algum exame por exemplo e aproveitando que elas estarão lá. Por que não aproveitar para doar?</p>
 
     <?php 
-    require_once 'config.php';
+    require_once 'config/config.php';
 
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
