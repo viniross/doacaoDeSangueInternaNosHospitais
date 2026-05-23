@@ -13,9 +13,11 @@ Esta plataforma web serve como a face digital da campanha, atuando como um prot�
 </p>
 
 ## Impacto Corporativo e Pesquisa
-- **Pitch Executivo:** O modelo de negócio e a plataforma foram apresentados em um pitch para o **ATRION**(Centro de Inovação do Hospital Moinhos de Vento).
-- **Apresentação Corporativa:** O sistema foi demonstrado em um auditório para mais de 70 profissionais de diversos setores da **Unimed Porto Alegre**.
-- **Validação Científica:** O desenvolvimento culminou na escrita de um artigo científico, validado e exposto em duas edições consecutivas de feiras técnicas.
+* **Pitch Executivo:** O modelo de negócio e a plataforma foram apresentados em um *pitch* para o **ATRION** (Centro de Inovação do Hospital Moinhos de Vento). [Clique aqui para ver os slides do Pitch](./docs/pitch-ibdhosp.pdf).
+* **Apresentação Corporativa:** O sistema foi demonstrado em um auditório para mais de 70 profissionais de diversos setores da **Unimed Porto Alegre**.
+* **Validação Científica:** O desenvolvimento culminou na escrita de um artigo científico, validado e exposto em duas edições consecutivas de feiras técnicas. 
+  * [Clique aqui para ler o Artigo Científico](./docs/artigo-cientifico-ibdhosp.pdf)
+  * [Clique aqui para ver os Slides da Pesquisa](./docs/apresentacao-pesquisa-feira.pdf)
 
 <p align="center">
   <img src="assets/images/apresentacao-feira.jpg" alt="Apresentação na Feira Técnica" width="500">
@@ -104,7 +106,7 @@ CREATE TABLE `dados` (
     - Inicie os módulos Apache e MySQL no seu painel de controle do XAMPP.
     - Abra seu navegador e acesse `http://localhost/doacaoDeSangueInternaNosHospitais/`.
 
-## 👥 Desenvolvedores
+## Desenvolvedores
 
 | Desenvolvedor | GitHub | LinkedIn |
 | :--- | :---: | :---: |
