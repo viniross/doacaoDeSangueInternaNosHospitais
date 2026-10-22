@@ -1,3 +1,7 @@
+<div align="right">
+  <a href="README.md">🇺🇸 English</a> | <strong>🇧🇷 Português</strong>
+</div>
+
 # IBDHosp - Campanha de Doação de Sangue Interna nos Hospitais
 
 ## Visão Geral
